@@ -27,6 +27,7 @@ namespace DevBetterWeb.Core.Entities
     public string UserId { get; private set; }
     public string? FirstName { get; private set; }
     public string? LastName { get; private set; }
+    //public DateTime? BirthDate { get; private set; }
     public string? AboutInfo { get; private set; }
     public string? Address { get; private set; }
     public string? PEFriendCode { get; private set; }
@@ -86,6 +87,14 @@ namespace DevBetterWeb.Core.Entities
       Address = address;
       CreateOrUpdateUpdateEvent(nameof(Address));
     }
+
+    //public void UpdateBirthday(DateTime? birthday)
+    //{
+    //  if (BirthDate == birthday) return;
+
+    //  BirthDate = birthday;
+    //  CreateOrUpdateUpdateEvent(nameof(BirthDate));
+    //}
 
     public void UpdateAboutInfo(string? aboutInfo)
     {
